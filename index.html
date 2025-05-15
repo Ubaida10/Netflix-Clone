@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQog Walton, 2024-10-21, 17:15:26Q0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="Icon" href="./img/nficon.ico" type="img/x-icon">
+</head>
+
+<body>
+    <!-- Header -->
+<header>
+    <nav class="navbar navbar-expand-lg bg-transparent px-4 py-3">
+        <div class="container-fluid container">
+            <a href="#" class="logo-link">
+                <img src="./img/logo.png" alt="Logo" class="logo-img" />
+            </a>
+            <button class="red-btn fw-semibold">Sign In</button>
+        </div>
+    </nav>
+
+    <section class="hero-content text-center text-white">
+        <h1 class="hero-title">Unlimited movies, TV shows, and more.</h1>
+        <p class="hero-first-p">Watch anywhere. Cancel anytime.</p>
+        <p class="hero-first-p">Starts at Rs 250. Cancel anytime.</p>
+        <p class="hero-second-p">Ready to watch? Enter your email to create or restart your membership.</p>
+        
+        <form class="row g-2 align-items-center justify-content-center">
+            <div class="col-12 col-lg-10">
+                <div class="input-group">
+                    <input type="email" class="form-control bg-dark text-white border-0 py-2"
+                        placeholder="Email address" aria-label="Email address" />
+                    <button class="btn red-btn py-2 px-6" type="submit">Get Started <i
+                            class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </form>
+    </section>
+</header>
+
+    
+    <!-- Trending Now -->
+    <section class="trending-now py-5 bg-black text-white">
+        <div class="container">
+            <h1 class="fw-bold mb-4">Trending Now</h1>
+            <div id="trendingCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-6 col-md-3 col-lg-2">
+                                <div class="trending-card position-relative text-center">
+                                    <img src="./img/mv1.webp" alt="Movie 1" class="img-fluid rounded">
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 col-lg-2">
+                                <div class="trending-card position-relative text-center">
+                                    <img src="./img/mv2.webp" alt="Movie 2" class="img-fluid rounded">
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 col-lg-2">
+                                <div class="trending-card position-relative text-center">
+                                    <img src="./img/mv3.webp" alt="Movie 3" class="img-fluid rounded">
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 col-lg-2">
+                                <div class="trending-card position-relative text-center">
+                                    <img src="./img/mv4.webp" alt="Movie 4" class="img-fluid rounded">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-6 col-md-3 col-lg-2">
+                                <div class="trending-card position-relative text-center">
+                                    <img src="./img/mv5.webp" alt="Movie 5" class="img-fluid rounded">
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 col-lg-2">
+                                <div class="trending-card position-relative text-center">
+                                    <img src="./img/mv6.webp" alt="Movie 6" class="img-fluid rounded">
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 col-lg-2">
+                                <div class="trending-card position-relative text-center">
+                                    <img src="./img/mv7.webp" alt="Movie 7" class="img-fluid rounded">
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 col-lg-2">
+                                <div class="trending-card position-relative text-center">
+                                    <img src="./img/mv8.webp" alt="Movie 8" class="img-fluid rounded">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#trendingCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#trendingCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="reasons-section">
+    <h2 class="reasons-heading">More Reasons to Join</h2>
+    <div class="reasons-container">
+        <div class="reason-card">
+            <img src="./img/tv-icon.png" alt="TV Icon" class="reason-icon">
+            <h3>Enjoy on your TV</h3>
+            <p>Watch on Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+        </div>
+        <div class="reason-card">
+            <img src="./img/dw-icon.png" alt="Download Icon" class="reason-icon">
+            <h3>Download your shows to watch offline</h3>
+            <p>Save your favorites easily and always have something to watch.</p>
+        </div>
+        <div class="reason-card">
+            <img src="./img/wa-icon.png" alt="Watch Icon" class="reason-icon">
+            <h3>Watch everywhere</h3>
+            <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+        </div>
+        <div class="reason-card">
+            <img src="./img/dw-icon.png" alt="Profile Icon" class="reason-icon">
+            <h3>Create profiles for kids</h3>
+            <p>Send kids on adventures with their favorite characters in a space made just for them — free with your membership.</p>
+        </div>
+    </div>
+</section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section py-5">
+        <div class="container">
+            <h2 class="fw-bold mb-4">Frequently Asked Questions</h2>
+            <article class="faq-item mb-2">
+                <h3 class="faq-question faq-toggle d-flex justify-content-between align-items-center" role="button"
+                    aria-expanded="false" aria-controls="faq-answer-1">
+                    <span>What is this streaming platform?</span>
+                    <span class="faq-icon"></span>
+                </h3>
+                <div class="faq-answer faq-body" id="faq-answer-1">
+                    <p>This streaming platform offers a wide variety of TV shows, movies, documentaries, and more,
+                        available on various devices with an internet connection.</p>
+                </div>
+            </article>
+            <article class="faq-item mb-2">
+                <h3 class="faq-question faq-toggle d-flex justify-content-between align-items-center" role="button"
+                    aria-expanded="false" aria-controls="faq-answer-2">
+                    <span>How much does a subscription cost?</span>
+                    <span class="faq-icon"></span>
+                </h3>
+                <div class="faq-answer faq-body" id="faq-answer-2">
+                    <p>Subscription plans vary by region and tier. Visit our pricing page for details.</p>
+                </div>
+            </article>
+            <article class="faq-item mb-2">
+                <h3 class="faq-question faq-toggle d-flex justify-content-between align-items-center" role="button"
+                    aria-expanded="false" aria-controls="faq-answer-2">
+                    <span>Where can I watch?</span>
+                    <span class="faq-icon"></span>
+                </h3>
+                <div class="faq-answer faq-body" id="faq-answer-3">
+                    <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at
+                        netflix.com from your personal computer or on any internet-connected device that offers the
+                        Netflix app, including smart TVs, smartphones, tablets, streaming media players and game
+                        consoles.
+                        You can also download your favorite shows with the iOS or Android app. Use downloads to watch
+                        while you're on the go and without an internet connection. Take Netflix with you anywhere.</p>
+                </div>
+            </article>
+            <article class="faq-item mb-2">
+                <h3 class="faq-question faq-toggle d-flex justify-content-between align-items-center" role="button"
+                    aria-expanded="false" aria-controls="faq-answer-2">
+                    <span>How do I cancel?</span>
+                    <span class="faq-icon"></span>
+                </h3>
+                <div class="faq-answer faq-body" id="faq-answer-4">
+                    <p>Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your
+                        account online in two clicks. There are no cancellation fees – start or stop your account
+                        anytime.</p>
+                </div>
+            </article>
+            <article class="faq-item mb-2">
+                <h3 class="faq-question faq-toggle d-flex justify-content-between align-items-center" role="button"
+                    aria-expanded="false" aria-controls="faq-answer-2">
+                    <span>What can I watch on Netflix?</span>
+                    <span class="faq-icon"></span>
+                </h3>
+                <div class="faq-answer faq-body" id="faq-answer-5">
+                    <p>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning
+                        Netflix originals, and more. Watch as much as you want, anytime you want.</p>
+                </div>
+            </article>
+
+
+            <article class="faq-item mb-2">
+                <h3 class="faq-question faq-toggle d-flex justify-content-between align-items-center" role="button"
+                    aria-expanded="false" aria-controls="faq-answer-2">
+                    <span>Is Netflix good for kids?</span>
+                    <span class="faq-icon"></span>
+                </h3>
+                <div class="faq-answer faq-body" id="faq-answer-6">
+                    <p>The Netflix Kids experience is included in your membership to give parents control while kids
+                        enjoy family-friendly TV shows and movies in their own space.
+
+                        Kids profiles come with PIN-protected parental controls that let you restrict the maturity
+                        rating of content kids can watch and block specific titles you don’t want kids to see.</p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+
+    <!-- Signup Section -->
+    <section class="signup-section py-5">
+        <div class="container">
+            <p class="mb-3 text-center">Ready to watch? Enter your email to create or restart your membership.</p>
+            <form class="signup-form">
+                <div class="input-group">
+                    <input type="email" class="form-control" placeholder="Email address" aria-label="Email address" required />
+                    <button class="btn btn-danger" type="submit">Get Started</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <!--footer section-->
+    <footer class="py-5 px-4 bg-black text-secondary">
+        <div class="container">
+            <p class="text-start mb-4">
+                <a href="#" class="text-secondary text-decoration-underline">
+                    Questions? Contactus.
+                </a>
+            </p>
+            <div class="row row-cols-2 row-cols-md-4 g-4 mb-4">
+                <div class="col">
+                    <a href="#" class="d-block text-secondary text-decoration-underline mb-2">FAQ</a>
+                    <a href="#" class="d-block text-secondary text-decoration-underline mb-2">Investor Relations</a>
+                    <a href="#" class="d-block text-secondary text-decoration-underline mb-2">Privacy</a>
+                    <a href="#" class="d-block text-secondary text-decoration-underline">Speed Test</a>
+                </div>
+
+
+                <div class="col">
+                    <a href="#" class="d-block text-secondary text-decoration-underline mb-2">Help Center</a>
+                    <a href="#" class="d-block text-secondary text-decoration-underline mb-2">Jobs</a>
+                    <a href="#" class="d-block text-secondary text-decoration-underline mb-2">Cookie Preferences</a>
+                    <a href="#" class="d-block text-secondary text-decoration-underline">Legal Notices</a>
+                </div>
+
+                <div class="col">
+                    <a href="#" class="d-block text-secondary text-decoration-underline mb-2">Account</a>
+                    <a href="#" class="d-block text-secondary text-decoration-underline mb-2">Ways to Watch</a>
+                    <a href="#" class="d-block text-secondary text-decoration-underline mb-2">Corporate Information</a>
+                    <a href="#" class="d-block text-secondary text-decoration-underline">Only on Our Platform</a>
+                </div>
+
+                <div class="col">
+                    <a href="#" class="d-block text-secondary text-decoration-underline mb-2">Media Center</a>
+                    <a href="#" class="d-block text-secondary text-decoration-underline mb-2">Terms of Use</a>
+                    <a href="#" class="d-block text-secondary text-decoration-underline">Contact Us</a>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <select class="form-select bg-dark text-white border-0 w-auto">
+                    <option>English</option>
+                </select>
+            </div>
+
+            <p class="mb-1">
+                Netflix
+            </p>
+
+            <p>
+                This page is protected by Google reCAPTCHA to ensure you're not a bot.
+                <a href="#" class="text-secondary text-decoration-underline">Learn more.</a>
+            </p>
+        </div>
+    </footer>
+
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
